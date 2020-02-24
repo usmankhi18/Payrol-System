@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Payrol System</string>
+    <string name="register">Register</string>
+    <string name="gender">Select Gender</string>
+</resources>

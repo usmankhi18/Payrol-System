@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:layout_gravity="center"
+            android:text="Configurations"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_APIServer"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="left"
+        android:textSize="15dp"
+        android:text="Enter API Server:" />
+
+    <EditText
+        android:id="@+id/et_APIServer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:maxLength="50"
+        android:inputType="textPersonName"
+        android:hint="http://10.0.7.109/PayrolService1/" />
+
+    <TextView
+        android:id="@+id/tv_APIUserName"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="left"
+        android:textSize="15dp"
+        android:text="Enter API UserName:" />
+
+    <EditText
+        android:id="@+id/et_APIUserName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:maxLength="50"
+        android:inputType="textPersonName"
+        android:hint="admin" />
+
+    <TextView
+        android:id="@+id/tv_APIPassword"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="left"
+        android:textSize="15dp"
+        android:text="Enter API Password:" />
+
+    <EditText
+        android:id="@+id/et_Password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:maxLength="50"
+        android:inputType="textPassword"
+        android:hint="admin123" />
+
+    <TextView
+        android:id="@+id/tv_SyncAutomatic"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="left"
+        android:textSize="15dp"
+        android:text="Sync Automatic" />
+
+    <CheckBox
+        android:id="@+id/chk_SyncAutomatic"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Sync Automatic" />
+
+    <TextView
+        android:id="@+id/tv_SyncTime"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="left"
+        android:textSize="15dp"
+        android:text="Sync Time" />
+
+    <TextView
+        android:id="@+id/et_SyncTime"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Enter Time" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:layout_margin="5dp"
+            android:layout_marginHorizontal="30dp"
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:text="Save Settings"/>
+    </LinearLayout>
+
+</LinearLayout>
